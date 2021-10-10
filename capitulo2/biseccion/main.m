@@ -4,8 +4,11 @@
 % Descripcion: 
 %
 
-h=figure(1);
 
+% Problema 1:
+%   
+%   Descripción del problema 1
+% 
 
 
 f = @(x) x.^2 - 5;
@@ -21,6 +24,7 @@ try
   [y, datos, iter] = biseccion(f,a,b);
   fprintf('El valor de corte es y=%d, el número de iteraciones es %d\n',y,iter);
   
+  h=figure(1);
   x = a-delta:0.1:b+delta;
   plot (x, f(x), "linewidth", 4);
   hold on;
@@ -58,3 +62,8 @@ catch err
 end
 
 hold off;
+
+% Problema 2:
+%   
+%   Descripción del problema 2
+% 
